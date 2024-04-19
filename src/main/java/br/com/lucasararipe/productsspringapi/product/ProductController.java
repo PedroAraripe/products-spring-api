@@ -22,9 +22,10 @@ public class ProductController {
     return productService.list();
   }
 
-  // TODO IMPLEMENT CREATE PRODUCT
   @PostMapping
   public Product createTransaction(@RequestBody Product product) {
     return productService.create(product);
   }
+
+  // TODO implement UD
 }

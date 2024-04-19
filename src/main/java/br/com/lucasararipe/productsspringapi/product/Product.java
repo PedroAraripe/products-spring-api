@@ -15,4 +15,8 @@ public record Product (
   BigDecimal price,
   int amount,
   @Version Long version
-) {}
+) {
+  public Product {
+    price = price.setScale(2);
+  }
+}

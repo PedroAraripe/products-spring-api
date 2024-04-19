@@ -1,0 +1,12 @@
+2024-04-19 05:27:05.909382-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCTS" not found (this database is empty); SQL statement:
+SELECT "PRODUCTS"."ID" AS "ID", "PRODUCTS"."NAME" AS "NAME", "PRODUCTS"."PRICE" AS "PRICE", "PRODUCTS"."AMOUNT" AS "AMOUNT", "PRODUCTS"."VERSION" AS "VERSION", "PRODUCTS"."DESCRIPTION" AS "DESCRIPTION" FROM "PRODUCTS" [42104-224]
+2024-04-19 05:32:37.274165-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCTS" not found (this database is empty); SQL statement:
+SELECT "PRODUCTS"."ID" AS "ID", "PRODUCTS"."NAME" AS "NAME", "PRODUCTS"."PRICE" AS "PRICE", "PRODUCTS"."AMOUNT" AS "AMOUNT", "PRODUCTS"."VERSION" AS "VERSION", "PRODUCTS"."DESCRIPTION" AS "DESCRIPTION" FROM "PRODUCTS" [42104-224]
+2024-04-19 05:51:44.730765-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS PRODUCTS ( id BIGINT AUTO_INCREMENT PRIMARY KEY,[*], name VARCHAR(255), description VARCHAR(255), price DECIMAL(19,2), amount INT, version BIGINT )"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS PRODUCTS ( id BIGINT AUTO_INCREMENT PRIMARY KEY,, name VARCHAR(255), description VARCHAR(255), price DECIMAL(19,2), amount INT, version BIGINT ) [42001-224]
+2024-04-19 05:57:09.407175-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCTS" already exists; SQL statement:
+CREATE TABLE PRODUCTS ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), description VARCHAR(255), price DECIMAL(19,2), amount INT, version BIGINT ) [42101-224]
