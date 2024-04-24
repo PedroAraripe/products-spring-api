@@ -24,7 +24,7 @@ public class ProductService {
   
   @Transactional
   public Product update(Product product) {
-    checkIfProductExists(product.id());
+    checkIfProductExists(product.getId());
 
     return productRepository.save(product);
   }
